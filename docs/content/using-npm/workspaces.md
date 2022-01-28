@@ -13,7 +13,7 @@ file system from within a singular top-level, root package.
 This set of features makes up for a much more streamlined workflow handling
 linked packages from the local file system. Automating the linking process
 as part of `npm install` and avoiding manually having to use `npm link` in
-order to add references to packages that should be symlinked into the current
+order to add references to packages that should be symlinked from the current
 `node_modules` folder.
 
 We also refer to these packages being auto-symlinked during `npm install` as a
@@ -47,7 +47,7 @@ a `package.json` inside it, defining a Node.js package, e.g:
 ```
 
 The expected result once running `npm install` in this current working
-directory `.` is that the folder `workspace-a` will get symlinked to the
+directory `.` is that the folder `workspace-a` will get symlinked from the
 `node_modules` folder of the current working dir.
 
 Below is a post `npm install` example, given that same previous example
